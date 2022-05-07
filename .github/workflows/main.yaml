@@ -8,12 +8,7 @@ on:
 jobs:
   build_and_upload:
     runs-on: ubuntu-latest
-
-    
-steps:
-      -
-      
-        uses: actions/checkout@v2
+    steps:
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
