@@ -1,9 +1,9 @@
 name: Github 2 Dockerhub 2 Slack
 on:
-  push:
-    # types: [published]
-    # tag:
-    # - v1.*
+  release:
+    types: [published]
+    tag:
+    - v1.*
 
 jobs:
   build_and_upload:
@@ -42,7 +42,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "Name: Qier Chu\nMatriculation: A0249482U\nEmail: e0941675@u.nus.edu\nRepo:https://github.com/qchu002/randomnum.git \nImage Name: qierchualice002/randomnum:v1.0\n Image URL: https://hub.docker.com/repository/docker/qierchualice002/randomnum"
+                    "text": "Name: Qier Chu\nMatriculation: A0249482U\nEmail: e0941675@u.nus.edu\nRepo:git@github.com:qchu002/randomnum.git \nImage Name: qierchualice002/randomnum:v1.0\n Image URL: https://hub.docker.com/repository/docker/qierchualice002/randomnum"
                   }
                 }
               ]
